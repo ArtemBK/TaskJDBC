@@ -4,7 +4,6 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Util {
-    private static final String DRIVER_CLASS_NAME = "com.mysql.jdbc.Driver";
     private static final String JDBC_URL = "jdbc:mysql://localhost:3306/mytestdb?autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&serverTimezone=GMT";
     private static final String LOGIN = "root";
     private static final String PASSWORD = "root2";
