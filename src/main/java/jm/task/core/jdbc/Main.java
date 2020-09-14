@@ -1,11 +1,12 @@
 package jm.task.core.jdbc;
 
+import jm.task.core.jdbc.dao.UserDaoHibernateImpl;
 import jm.task.core.jdbc.dao.UserDaoJDBCImpl;
 import jm.task.core.jdbc.model.User;
 
 public class Main {
     public static void main(String[] args) {
-        UserDaoJDBCImpl dao = new UserDaoJDBCImpl();
+        UserDaoHibernateImpl dao = new UserDaoHibernateImpl();
         dao.createUsersTable();
         dao.saveUser("00_Name", "00_lastname", (byte) 10);
         dao.saveUser("01_Name", "01_lastname", (byte) 20);
