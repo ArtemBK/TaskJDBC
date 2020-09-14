@@ -13,12 +13,6 @@ public class Util {
         Connection connection = null;
 
         try {
-            Class.forName(DRIVER_CLASS_NAME);
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-
-        try {
             connection = DriverManager.getConnection(JDBC_URL, LOGIN, PASSWORD);
         } catch(SQLException e) {
             e.printStackTrace();
